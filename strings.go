@@ -17,5 +17,5 @@ func main() {
 	fmt.Println("The length of s2 string is:", utf8.RuneCountInString(s2))
 
 	fmt.Println(strings.Contains("Drunken sailor", "sail"))
-	
+
 }
