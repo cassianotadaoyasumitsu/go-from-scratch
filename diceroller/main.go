@@ -7,6 +7,8 @@ import (
 	"time"
 )
 
+// second dice
+// limit of inputs
 func main() {
 	rand.Seed(time.Now().UnixNano()) // seed a diff rand q
 	fmt.Println("Roll the dice and try to guess the result! Or press 'q' to quit!")
