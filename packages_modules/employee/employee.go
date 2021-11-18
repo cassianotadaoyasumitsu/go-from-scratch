@@ -1,6 +1,6 @@
 package employee
 
-type employee struct {
+type Employee struct {
 	ID     int
 	Name   string
 	Salary float64

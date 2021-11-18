@@ -5,17 +5,17 @@ import (
 	"fmt"
 	"os"
 
-	employee "example.com/employee"
+	emp "example.com/employee"
 )
 
 func main() {
-	var empls []employee.Employee
+	var empls []emp.Employee
 
-	empls = append(empls, employee.Employee{Name: "Mike", Salary: 10000},
-		employee.Employee{Name: "John", Salary: 9000})
+	empls = append(empls, emp.Employee{Name: "Mike", Salary: 10000},
+		emp.Employee{Name: "Cassiano", Salary: 9000})
 
 	for _, e := range empls {
-		fmt.Printf("%s - %f", e.Salary)
+		fmt.Printf("%s - %f\n", e.Name, e.Salary)
 	}
 
 	input := bufio.NewScanner(os.Stdin)
